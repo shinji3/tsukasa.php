@@ -1,5 +1,6 @@
 <?php
 header("Content-Type: video/x-ms-asf");
+header("Cache-Control: no-cache");
 date_default_timezone_set("UTC");
 ?><ASX version="3.0">
 <Entry>
