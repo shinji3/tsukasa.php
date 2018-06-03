@@ -35,7 +35,7 @@ namespace WindowsFormsApp1
             var start_pts = stream.Attribute("start_pts");
             var start_time = (DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() - int.Parse(start_pts.Value) - 10000) / 1000;
             uri.Scheme = "httpt";
-            textBox2.Text = $"http://auto.meto4d.pgw.jp/kagamin/tsukasa.asx?start_time={start_time}&ref={Uri.EscapeDataString(uri.ToString())}";
+            textBox2.Text = $"http://mudai.moe.hm/kagamin/tsukasa.php?start_time={start_time}&ref={Uri.EscapeDataString(uri.ToString())}";
         }
     }
 }
